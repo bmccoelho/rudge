@@ -1,5 +1,6 @@
+require 'rudge/abbreviations'
+
 class Rudge
-  require 'rudge/abbreviations'
 
   # end of sentence marker
   EOS = "\001"
