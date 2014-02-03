@@ -15,8 +15,7 @@ class Rudge
 
     def self.list
       list = TITLES + ENTITIES + MONTHS + DAYS + ADDRESSES + MISC
-      list = list + list.map { |a| a.capitalize} 
+      list + list.map { |a| a.capitalize }
     end
-
   end
 end
