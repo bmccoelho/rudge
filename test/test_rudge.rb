@@ -51,10 +51,10 @@ class RudgeTest < Test::Unit::TestCase
   end
 
   def test_two_sentences_with_abbreviations
-    sentences = Rudge.sentences("Hi, mr. White! Check out mr. Pink black.")
+    sentences = Rudge.sentences("Hi, Mr. White! Check out mr. Pink black.")
 
     assert_equal 2,                           sentences.size
-    assert_equal "Hi, mr. White!",            sentences[0]
+    assert_equal "Hi, Mr. White!",            sentences[0]
     assert_equal "Check out mr. Pink black.", sentences[1]
   end
 end
