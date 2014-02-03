@@ -15,7 +15,7 @@ class Rudge
     text.gsub!(/(\.\.\.*)#{EOS}/) { $1 }
 
     # correct abbreviations - precompile regexp?
-    text.gsub!(/(#{Rudge::Abbreviations.list.join("|")})\.#{EOS}/i) { $1 << "." }
+    text.gsub!(/\s(#{Rudge::Abbreviations.list.join("|")})\.#{EOS}/i) { " " << $1 << "." }
 
     # split on EOS marker, strip gets rid of trailing whitespace
     text.split(EOS).map { | sentence | sentence.strip }
