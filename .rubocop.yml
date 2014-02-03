@@ -1,0 +1,39 @@
+AllCops:
+  Includes:
+    - Rakefile
+    - config.ru
+    - Gemfile
+  Excludes:
+    - bin/**
+    - db/**
+    - config/**
+    - script/**
+    - features/support/env.rb
+    - !ruby/regexp /old_and_unused\.rb$/
+
+Documentation:
+  Enabled: false
+
+EmptyLines:
+  Enabled: true
+
+LeadingCommentSpace:
+  Enabled: true
+
+LineLength:
+  Max: 176
+
+StringLiterals:
+  Enabled: true
+
+TrailingBlankLines:
+  Enabled: true
+
+TrailingWhitespace:
+  Enabled: true
+
+StringLiterals:
+  EnforcedStyle: double_quotes
+  SupportedStyles:
+    - single_quotes
+    - double_quotes
