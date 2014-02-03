@@ -29,8 +29,9 @@ class RudgeTest < Test::Unit::TestCase
   def test_trimmed_sentence
     sentences = Rudge.sentences("to be trimmed. ")
 
-    assert_equal 1,                sentences.size
+    assert_equal 2,                sentences.size
     assert_equal "to be trimmed.", sentences[0]
+    assert_equal "", sentences[1]
   end
 
   def test_two_sentences_with_whitespace
