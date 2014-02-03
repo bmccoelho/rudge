@@ -14,8 +14,7 @@ class Rudge
     MISC = %w(vs etc no esp cf)
 
     def self.list
-      list = TITLES + ENTITIES + MONTHS + DAYS + ADDRESSES + MISC
-      list + list.map { |a| a.capitalize }
+      TITLES + ENTITIES + MONTHS + DAYS + ADDRESSES + MISC
     end
   end
 end
