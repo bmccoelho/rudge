@@ -1,4 +1,4 @@
-# rudge 
+# rudge [![Gem Version](https://badge.fury.io/rb/rudge.png)](http://badge.fury.io/rb/rudge)
 determines sentences in a text.
 
 ## Installation
