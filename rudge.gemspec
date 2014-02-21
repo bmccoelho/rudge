@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = "rudge"
-  s.version     = "0.0.6"
+  s.version     = "0.0.7"
   s.date        = "2014-02-21"
   s.summary     = "Rudge - determines sentences."
   s.description = "A Ruby Judge! Determines the sentences in a text."
