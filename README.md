@@ -10,8 +10,12 @@ determines sentences in a text.
     Rudge.sentences("Here's to the crazy ones. The misfits. The rebels. The troublemakers.
                      The round pegs in the square holes. The ones who see things differently.")
 
-    # => ["Here's to the crazy ones.", "The misfits.", "The rebels.", "The troublemakers.", 
+    # => ["Here's to the crazy ones.", "The misfits.", "The rebels.", "The troublemakers.",
           "The round pegs in the square holes.", "The ones who see things differently."]
 
 ## Documentation
 based on the work available here: http://www.pressure.to/ruby/
+
+## License
+
+Rudge is released under the [MIT License](http://www.opensource.org/licenses/MIT).
