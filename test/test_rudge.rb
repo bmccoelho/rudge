@@ -6,32 +6,32 @@ class RudgeTest < Test::Unit::TestCase
     text      = "Hello World."
     sentences = Rudge.sentences(text)
 
-    assert_equal 1,    sentences.size
-    assert_equal text, sentences[0]
+    assert_equal 1,              sentences.size
+    assert_equal "Hello World.", sentences[0]
   end
 
   def test_exclamation_mark
     text      = "Hello World!"
     sentences = Rudge.sentences(text)
 
-    assert_equal 1,    sentences.size
-    assert_equal text, sentences[0]
+    assert_equal 1,              sentences.size
+    assert_equal "Hello World!", sentences[0]
   end
 
   def test_question_mark
-    text      = "Hello World!"
+    text      = "Hello World?"
     sentences = Rudge.sentences(text)
 
     assert_equal 1,    sentences.size
-    assert_equal text, sentences[0]
+    assert_equal "Hello World?", sentences[0]
   end
 
   def test_trimmed_sentence
-    sentences = Rudge.sentences("to be trimmed. ")
+    sentences = Rudge.sentences("  to be trimmed.  ")
 
     assert_equal 2,                sentences.size
     assert_equal "to be trimmed.", sentences[0]
-    assert_equal "", sentences[1]
+    assert_equal "",               sentences[1]
   end
 
   def test_two_sentences_with_whitespace
