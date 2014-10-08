@@ -9,7 +9,7 @@ class Rudge
 
     # initial split after punctuation,
     # preserves trailing whitespace for the ellipsis correction
-    text.gsub!(/([\.?!](?:\"|\'|\)|\]|\})?)(\s+)/) { $1 << EOS << $2 }
+    text.gsub!(/([.?!](?:\"|\'|\)|\]|\})?)(\s+)/) { $1 << EOS << $2 }
 
     # correct ellipsis marks and rows of stops
     text.gsub!(/(\.\.\.*)#{EOS}/) { $1 }
