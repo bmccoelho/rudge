@@ -5,7 +5,7 @@ determines sentences in a text.
      gem install rudge
 
 ## Options
-passing ```keep_trailling_whitespace: true``` to Rudge will allow to keep the whitespaces ant the end of each sentence
+passing ```keep_trailling_whitespace: true``` to Rudge will allow to keep the whitespaces at the end of each sentence
 
 ## Example
     require 'rudge'
