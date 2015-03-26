@@ -1,5 +1,5 @@
 require "test/unit"
-require "rudge"
+require_relative "../lib/rudge"
 
 class RudgeRegressionTest < Test::Unit::TestCase
   def test_regression

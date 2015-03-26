@@ -1,4 +1,4 @@
-require "rudge/abbreviations"
+require_relative "rudge/abbreviations"
 
 class Rudge
   # end of sentence marker (before and after whitespace)
