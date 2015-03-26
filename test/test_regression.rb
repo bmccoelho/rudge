@@ -1,7 +1,7 @@
-require "test/unit"
-require "rudge"
+require "minitest/autorun"
+require_relative "../lib/rudge"
 
-class RudgeRegressionTest < Test::Unit::TestCase
+class RudgeRegressionTest < Minitest::Test
   def test_regression
     sentences = Rudge.sentences("Hello Project. Goodbye.")
 
