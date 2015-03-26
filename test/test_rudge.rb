@@ -1,7 +1,7 @@
-require "test/unit"
+require "minitest/autorun"
 require_relative "../lib/rudge"
 
-class RudgeTest < Test::Unit::TestCase
+class RudgeTest < Minitest::Test
   def test_one_sentence
     text      = "Hello World."
     sentences = Rudge.sentences(text)
